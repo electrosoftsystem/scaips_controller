@@ -1,0 +1,1063 @@
+.profile-container {
+  max-width: 1128px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.profile-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cover-photo {
+  height: 200px;
+  background-color: #e6e9ec;
+  border-radius: 0 0 8px 8px;
+}
+
+.profile-info {
+  display: flex;
+  padding: 0 24px;
+  margin-top: -72px;
+}
+
+.edit-intro-btn {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  color: #666;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-intro-btn:hover {
+  background-color: #f3f2ef;
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.profile-pic {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: #ddd;
+  overflow: hidden;
+  position: relative;
+  /* flex-shrink: 0; */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  margin-left: 24px;
+  padding-top: 72px;
+}
+
+.profile-details h1 {
+  font-size: 32px;
+  margin: 0 0 4px;
+}
+
+.headline {
+  font-size: 18px;
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 16px;
+}
+
+.open-to-btn {
+  background-color: white;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Navigation */
+.profile-nav {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 0 24px;
+}
+
+.profile-nav button {
+  background: none;
+  border: none;
+  padding: 16px 12px;
+  margin-right: 8px;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-nav button.active {
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.profile-nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #0a66c2;
+}
+
+/* Main Content */
+.profile-content {
+  display: flex;
+  padding: 16px 24px;
+}
+
+.left-column {
+  flex: 2;
+  margin-right: 24px;
+}
+
+.right-column {
+  flex: 1;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card:hover {
+  background-color: #f9f9f9;
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* About Section */
+.about-section p {
+  margin-bottom: 16px;
+}
+
+.show-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Education Section */
+.education-item {
+  margin-bottom: 16px;
+}
+
+.education-item h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.education-item p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Skills Section */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: #eef3f8;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+/* Open To Section */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.action-btn {
+  background-color: white;
+  border: 1px solid #666;
+  color: #666;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Analytics Section */
+.private {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Resources Section */
+.get-started-btn {
+  background-color: white;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+/* Premium Section */
+.premium-section {
+  background-color: #f3f2f0;
+  text-align: center;
+}
+
+.premium-btn {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.education-modal,
+.skill-modal,
+.experience-modal,
+.recommendation-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 552px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 4px;
+}
+
+form {
+  padding: 0 24px;
+}
+
+.form-section {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.form-section h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.date-inputs select {
+  flex: 1;
+  padding: 8px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.checkbox-group input {
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  color: #666;
+  font-size: 14px;
+}
+
+.learn-more {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+.required-note {
+  font-size: 12px;
+  color: #666;
+  margin: -12px 0 16px 0;
+}
+
+.hint-text {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+.add-skill-btn {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 0;
+  margin-top: 16px;
+}
+
+.cancel-btn {
+  background: none;
+  border: 1px solid #666;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Suggested Skills */
+.suggested-skills {
+  margin-top: 16px;
+}
+
+.skill-category {
+  margin-bottom: 16px;
+}
+
+.skill-category-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.suggested-skill-tag {
+  background-color: #eef3f8;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggested-skill-tag:hover {
+  background-color: #dce6f1;
+}
+
+/* Experience Section */
+.experience-section {
+  cursor: pointer;
+}
+
+.experience-item {
+  margin-bottom: 16px;
+}
+
+.experience-item h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.experience-item p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Projects Section */
+.project-item {
+  margin-bottom: 16px;
+}
+
+.project-date {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.project-description {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.project-link {
+  color: #0a66c2;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Courses Section */
+.courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item {
+  margin-bottom: 12px;
+}
+
+.course-item h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.course-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+/* Certifications Section */
+.certification-item {
+  margin-bottom: 16px;
+}
+
+.certification-item h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.certification-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.certification-id {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Recommendations Section */
+.recommendations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.add-recommendation-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #0a66c2;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-recommendation-btn:hover {
+  background-color: #eef3f8;
+}
+
+.recommendation-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.recommendation-text {
+  font-style: italic;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.recommendation-author {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.recommendation-details {
+  font-size: 13px;
+  color: #666;
+}
+
+.empty-recommendations {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.empty-recommendations p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+  }
+
+  .profile-details {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .left-column {
+    margin-right: 0;
+  }
+}
+
+/* Add to Profile Section Styles */
+.add-to-profile-section {
+  margin-bottom: 16px;
+}
+
+.add-to-profile-section h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.add-to-profile-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-to-profile-group {
+  padding: 16px;
+}
+
+.add-to-profile-group h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.add-to-profile-group.recommended {
+  background-color: #f8f8f8;
+}
+
+.add-to-profile-group.recommended p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.add-to-profile-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.add-to-profile-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-profile-item:hover {
+  background-color: #f5f5f5;
+}
+
+.add-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: #0a66c2;
+}
+
+.add-to-profile-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.add-to-profile-item p {
+  font-size: 12px;
+  color: #666;
+}
+/* Project Modal Specific Styles */
+.project-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 552px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-modal .modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-modal .form-section {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project-modal .form-group {
+  margin-bottom: 16px;
+}
+
+.project-modal .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.project-modal .form-group input,
+.project-modal .form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.project-modal .form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.project-modal .required-note {
+  font-size: 12px;
+  color: #666;
+  margin: -12px 0 16px 0;
+}
+
+.project-modal .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 0;
+  margin-top: 16px;
+}
+
+.project-modal .cancel-btn {
+  background: none;
+  border: 1px solid #666;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.project-modal .save-btn {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Specific styles for the project URL field */
+.project-modal .form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* Add asterisk for required fields */
+.project-modal .form-group label[required]::after {
+  content: " *";
+  color: #d92b2b;
+}
+
+/* Edit Intro Modal */
+.edit-intro-modal {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.edit-intro-modal .form-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.edit-intro-modal .form-section:last-child {
+  border-bottom: none;
+}
+
+.edit-intro-modal .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-intro-modal label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.edit-intro-modal input[type="text"],
+.edit-intro-modal input[type="email"],
+.edit-intro-modal input[type="url"],
+.edit-intro-modal input[type="tel"],
+.edit-intro-modal select,
+.edit-intro-modal textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-intro-modal .hint-text {
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.edit-intro-modal .learn-more {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+.edit-intro-modal .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.edit-intro-modal .checkbox-label input {
+  margin-right: 8px;
+}
+
+.add-position-btn,
+.add-education-btn,
+.edit-contact-btn {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.add-position-btn:hover,
+.add-education-btn:hover,
+.edit-contact-btn:hover {
+  text-decoration: underline;
+}
+
+/* Edit Intro Modal */
+.edit-intro-modal {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.edit-intro-modal .form-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.edit-intro-modal .form-section:last-child {
+  border-bottom: none;
+}
+
+.edit-intro-modal .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-intro-modal label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.edit-intro-modal input[type="text"],
+.edit-intro-modal input[type="email"],
+.edit-intro-modal input[type="url"],
+.edit-intro-modal input[type="tel"],
+.edit-intro-modal select,
+.edit-intro-modal textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-intro-modal .hint-text {
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.edit-intro-modal .learn-more {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+.edit-intro-modal .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.edit-intro-modal .checkbox-label input {
+  margin-right: 8px;
+}
+
+.add-position-btn,
+.add-education-btn,
+.edit-contact-btn {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.add-position-btn:hover,
+.add-education-btn:hover,
+.edit-contact-btn:hover {
+  text-decoration: underline;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-height: 90vh;
+  width: 90%;
+  max-width: 700px;
+  overflow-y: auto;
+}
+
+.modal h2 {
+  margin-bottom: 1rem;
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.save-btn {
+  background: #0073b1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}

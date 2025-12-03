@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar hiding */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* LinkedIn-style navigation tweaks */
+.horizontal-nav {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-tab {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-tab:hover {
+  background-color: #f8fafc;
+}
+
+.nav-tab.active {
+  border-bottom-color: #3b82f6;
+  color: #3b82f6;
+}
